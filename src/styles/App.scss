@@ -1,0 +1,8 @@
+@import '../styles/variables.scss';
+
+.App{
+    position: relative;
+    max-width: $srceen-widths-desktop;
+    margin: 0 auto;
+    background-color: $base-background-color;
+}
