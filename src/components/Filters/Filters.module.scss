@@ -3,8 +3,11 @@
 .container {
     position: absolute;
     top: 120px;
-    left:160px;
-    right: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
     max-width: 1110px;
     min-height: 72px;
     background-color: $base-background-list-color;

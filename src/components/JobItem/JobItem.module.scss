@@ -1,0 +1,114 @@
+@import "../../styles/variables.scss";
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 152px;
+    max-width: 1110px;
+    background-color: $base-background-list-color;
+
+    margin: 0 auto;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+
+    &__decoration {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 5px;
+        height: 152px;
+        background: $base-primary-color;
+        border-radius: 100px 0px 0px 100px;
+    }
+}
+
+.description {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+
+    &__info {
+        margin-left: 24px;
+    }
+
+    &__image {
+        width: 88px;
+        height: 88px;
+    }
+
+    &__position {
+        color: $base-headers-color;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: 0.2s all;
+
+        &:hover {
+            color: $base-primary-color;
+        }
+    }
+
+    &__company {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        gap: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        margin-bottom: 10px;
+        color: $base-primary-color;
+    }
+
+    &__main_tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        gap: 8px;
+    }
+
+    &__secondary_tags {
+        margin-top: 7px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+
+        color: $base-secondary-text-color;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left;
+
+            list-style: disc;
+
+            :first-child {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            li {
+                padding-left: 8px;
+                padding-right: 33px;
+            }
+        }
+    }
+}

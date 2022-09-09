@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.container {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+    background-color: #fff;
+    background: $base-primary-color;
+    border-radius: 12px;
+    padding: 7px 8px 3px 8px;
+}

@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.button {
+    display: flex;
+    background-color: $base-filters-tablet-color;
+    border-radius: 4px;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
+
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &__lable {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $base-primary-color;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 3px;
+        transition: 0.3s all;
+        
+        &:hover{
+            color: white;
+        }
+    }
+
+    &:hover{
+        background-color: $base-primary-color;
+    }
+}
