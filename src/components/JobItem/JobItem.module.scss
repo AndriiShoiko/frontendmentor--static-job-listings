@@ -18,12 +18,15 @@
     box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
     border-radius: 5px;
 
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     &__decoration {
         position: absolute;
         top: 0px;
         left: 0px;
         width: 5px;
-        height: 152px;
+        height: 100%;
         background: $base-primary-color;
         border-radius: 100px 0px 0px 100px;
     }
@@ -76,7 +79,7 @@
 
     &__main_tags {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: left;
         gap: 8px;
@@ -111,4 +114,23 @@
             }
         }
     }
+
+    &__category_list {
+        margin-left: 15px;
+    }
 }
+
+@media screen and (max-width: 960px) {
+    .description {
+        &__secondary_tags {
+            ul {
+                :first-child {
+                    list-style: disc;
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+@import "./JobItem-mobile.module.scss";

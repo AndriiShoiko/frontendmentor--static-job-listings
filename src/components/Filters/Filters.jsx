@@ -5,13 +5,19 @@ import s from './Filters.module.scss';
 
 function Filters() {
   return (
-    <div className={s.container}>
-      <div className={s.container__items}>
-        <FilterItem>Frontend</FilterItem>
-        <FilterItem>CSS</FilterItem>
-        <FilterItem>JavaScript</FilterItem>
+    <div className={s.wrapper}>
+      <div className={s.container}>
+        <div className={s.container__items}>
+          <FilterItem>Frontend</FilterItem>
+          <FilterItem>CSS</FilterItem>
+          <FilterItem>JavaScript</FilterItem>
+          {/*<FilterItem>HTML</FilterItem>
+        <FilterItem>Senior</FilterItem>*/}
+        </div>
+        <div className={s.container__clear}>
+          <ClearButton>Clear</ClearButton>
+        </div>
       </div>
-      <ClearButton>Clear</ClearButton>
     </div>
   )
 }

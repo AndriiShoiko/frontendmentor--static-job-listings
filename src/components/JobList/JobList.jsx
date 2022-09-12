@@ -4,7 +4,7 @@ import JobItem from '../JobItem/JobItem';
 
 function JobList() {
   return (
-    <div className={s.list}>
+    <div className={s.list + " " + s.list_active_search}>
       <JobItem>Senior frontend developer</JobItem>
       <JobItem>Senior frontend developer</JobItem>
       <JobItem>Senior frontend developer</JobItem>

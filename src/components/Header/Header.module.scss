@@ -1,7 +1,11 @@
 @import '../../styles/variables.scss';
 
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 156px;
     background-image: url('../../assets/images/background-header.jpg');
+    z-index: 0;
 }

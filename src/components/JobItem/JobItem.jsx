@@ -7,7 +7,7 @@ import s from './JobItem.module.scss';
 function JobItem(props) {
   return (
     <div className={s.container}>
-    <div className={s.container__decoration}></div>
+      <div className={s.container__decoration}></div>
       <div className={s.description}>
         <img className={s.description__image} src={require('../../assets/images/image-company/photosnap.svg').default} alt='photosnap' />
         <div className={s.description__info}>
@@ -34,7 +34,9 @@ function JobItem(props) {
           </div>
         </div>
       </div>
-      <CategoryList />
+      <div className={s.description__category_list}>
+        <CategoryList />
+      </div>
     </div>
   )
 }

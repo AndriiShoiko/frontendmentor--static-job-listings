@@ -6,6 +6,9 @@ function CategoryList() {
         <div className={s.container}>
             <CategoryItem>Frontend</CategoryItem>
             <CategoryItem>Senior</CategoryItem>
+            <CategoryItem>HTML</CategoryItem>
+            <CategoryItem>JavaScript</CategoryItem>
+            <CategoryItem>CSS</CategoryItem>
         </div>
     )
 }

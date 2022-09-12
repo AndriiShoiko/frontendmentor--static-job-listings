@@ -1,9 +1,16 @@
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
-.App{
+.App {
     position: relative;
     max-width: $srceen-widths-desktop;
     margin: 0 auto;
     background-color: $base-background-color;
-    min-height: 100vh;
+    padding-top: 120px;
+    //min-height: 100vh;
+}
+
+@media screen and (max-width: $srceen-widths-mobile-trigger) {
+    .App {
+        //max-width: $srceen-widths-mobile;
+    }
 }
