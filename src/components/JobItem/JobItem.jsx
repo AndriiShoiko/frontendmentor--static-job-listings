@@ -4,38 +4,41 @@ import TagNew from '../../UI/TagNew/TagNew';
 import CategoryList from '../CategoryList/CategoryList';
 import s from './JobItem.module.scss';
 
+import { svgSelector } from '../../assets/images/image-company/svgSelector';
+
 function JobItem(props) {
+  const data = props.data;
   return (
     <div className={s.container}>
       <div className={s.container__decoration}></div>
       <div className={s.description}>
-        <img className={s.description__image} src={require('../../assets/images/image-company/photosnap.svg').default} alt='photosnap' />
+        <img className={s.description__image} src={svgSelector(data.id)} alt={data.company} />
         <div className={s.description__info}>
           <div className={s.description__company}>
-            Photosnap
+            {data.company}
             <div className={s.description__main_tags}>
-              <TagNew />
-              <TagFeatured />
+              {data.new && <TagNew />}
+              {data.featured && <TagFeatured />}
             </div>
           </div>
           <div className={s.description__position} children={props.children}></div>
           <div className={s.description__secondary_tags}>
             <ul>
               <li>
-                1d ago
+                {data.postedAt}
               </li>
               <li>
-                Full Time
+                {data.contract}
               </li>
               <li>
-                USA only
+                {data.location}
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className={s.description__category_list}>
-        <CategoryList />
+        <CategoryList id={data.id} />
       </div>
     </div>
   )

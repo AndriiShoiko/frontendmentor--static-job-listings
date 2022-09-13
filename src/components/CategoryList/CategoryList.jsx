@@ -1,14 +1,13 @@
 import s from './CategoryList.module.scss';
 import CategoryItem from '../../UI/CategoryItem/CategoryItem';
+import { useSelector } from "react-redux";
+import { selectCategoriesFromVacancie } from "../../store/vacancies/vacanciesSelectors";
 
-function CategoryList() {
+function CategoryList({ id }) {
+    const categories = useSelector((state) => selectCategoriesFromVacancie(state, id));
     return (
         <div className={s.container}>
-            <CategoryItem>Frontend</CategoryItem>
-            <CategoryItem>Senior</CategoryItem>
-            <CategoryItem>HTML</CategoryItem>
-            <CategoryItem>JavaScript</CategoryItem>
-            <CategoryItem>CSS</CategoryItem>
+            {categories.map((element, index) => <CategoryItem key={index}>{element}</CategoryItem>)}
         </div>
     )
 }
