@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/frontendmentor--static-job-listings/static/css/main.a3f513a2.css",
+    "main.js": "/frontendmentor--static-job-listings/static/js/main.98cfb5ae.js",
+    "static/media/background-header.jpg": "/frontendmentor--static-job-listings/static/media/background-header.de05f2f685addd7ecad2.jpg",
+    "index.html": "/frontendmentor--static-job-listings/index.html",
+    "static/media/close-filter-item.svg": "/frontendmentor--static-job-listings/static/media/close-filter-item.c80c2f8fef83f4ae19e4a0ad27f706d3.svg",
+    "main.a3f513a2.css.map": "/frontendmentor--static-job-listings/static/css/main.a3f513a2.css.map",
+    "main.98cfb5ae.js.map": "/frontendmentor--static-job-listings/static/js/main.98cfb5ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3f513a2.css",
+    "static/js/main.98cfb5ae.js"
+  ]
+}
