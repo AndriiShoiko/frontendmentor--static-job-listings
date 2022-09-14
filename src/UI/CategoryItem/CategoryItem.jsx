@@ -4,7 +4,7 @@ import s from './CategoryItem.module.scss';
 function CategoryItem(props) {
     return (
         <div className={s.button}>
-            <div className={s.button__lable} children={props.children}></div>
+            <div className={s.button__lable} {...props} children={props.children}></div>
         </div>
     )
 }

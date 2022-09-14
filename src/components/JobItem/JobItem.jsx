@@ -4,15 +4,13 @@ import TagNew from '../../UI/TagNew/TagNew';
 import CategoryList from '../CategoryList/CategoryList';
 import s from './JobItem.module.scss';
 
-import { svgSelector } from '../../assets/images/image-company/svgSelector';
-
 function JobItem(props) {
   const data = props.data;
   return (
     <div className={s.container}>
-      <div className={s.container__decoration}></div>
+      {data.featured && <div className={s.container__decoration}></div>}
       <div className={s.description}>
-        <img className={s.description__image} src={svgSelector(data.id)} alt={data.company} />
+        <img className={s.description__image} src={data.logo} alt={data.company} />
         <div className={s.description__info}>
           <div className={s.description__company}>
             {data.company}

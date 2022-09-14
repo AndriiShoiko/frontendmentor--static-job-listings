@@ -4,6 +4,7 @@
     .container {
         min-height: 281px;
         max-width: 327px;
+        margin-bottom: 40px;
         flex-direction: column;
         justify-content: center;
     }
@@ -29,10 +30,21 @@
 
         &__position {
             font-size: 15px;
-        }        
+        }
 
         &__main_tags {
             flex-wrap: wrap;
+        }
+
+        &__secondary_tags {
+            font-size: 16px;
+
+            ul {
+                :first-child {
+                    list-style: none;
+                    padding-left: 8px;
+                }
+            }
         }
     }
 }
